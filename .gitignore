@@ -1,3 +1,5 @@
 # Directory containing XML files
 data
 
+# Passwords live here
+secrets.py

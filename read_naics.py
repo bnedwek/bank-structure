@@ -2,7 +2,9 @@
 import pandas as pd
 from neo4j.v1 import GraphDatabase, basic_auth
 
-driver = GraphDatabase.driver("bolt://localhost", auth=basic_auth("neo4j", "subaru02"))
+from secrets import NEO_PASSWORD
+
+driver = GraphDatabase.driver("bolt://localhost", auth=basic_auth("neo4j", NEO_PASSWORD))
 session = driver.session()
 
 naics_path = 'data/naics07.txt'
