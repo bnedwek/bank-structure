@@ -8,5 +8,8 @@ https://www.ffiec.gov/nicpubweb/nicweb/DataDownload.aspx
 NAICS 2007 codes:
 http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2007
 
+FIPS state codes:
+https://www.census.gov/geo/reference/ansi_statetables.html
+
 ## Tools
 Want to use this project to play around with graph database technologies (Apache TinkerPop, ArangoDB(?), etc.).
