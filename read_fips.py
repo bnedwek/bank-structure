@@ -15,7 +15,4 @@ for i, row in fips_file.iterrows():
 	name_long = row.STATE_NAME
 	gnis = row.STATENS
 
-	print("Adding: ", fips, "\t", name_short)
-
-	session.run("CREATE (a:STATE {fips: {fips}, name_short: {name_short}, name_long; {name_long}, gnis: {gnis}})",\
-		{"fips": fips, "name_short": name_short, "name_long": name_long, "gnis": gnis})
+	session.run("CREATE (a:STATE {fips: {fips}, name_short: {name_short}, name_long: {name_long}, gnis: {gnis}})", {"fips": fips, "name_short": name_short, "name_long": name_long, "gnis": gnis})
