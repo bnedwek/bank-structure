@@ -19,6 +19,7 @@ for i, row in naics_file.iterrows():
 	else:
 		parent = None
 
+	# Unquote some strings
 	if desc.startswith('"') and desc.endswith('"'):
 		desc = desc[1:-1]
 
